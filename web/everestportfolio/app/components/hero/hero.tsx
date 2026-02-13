@@ -8,6 +8,7 @@ export default function Hero() {
 
   const [title, setTitle] = useState("");
   const [name, setName] = useState("");
+  const [donetyping, setdoneTyping]= useState(false);
   useEffect(() => {
     let index = 0;
     let count = 0;
@@ -19,6 +20,7 @@ export default function Hero() {
         setName(fullname.substring(0, count));
         count++;
       } else {
+        setdoneTyping(true)
         clearInterval(timer);
       }
     }, 100);
@@ -28,9 +30,9 @@ export default function Hero() {
       <h1 className="md:text-8xl text-3xl text-black">
         {title} <span className="text-blue-500">{name}</span>
       </h1>
-      <p className="md:text-6xl text-2xl bg-linear-to-bl from-orange-500 to-yellow-300 bg-clip-text text-transparent">
+      {donetyping && <p className=" slidein md:text-6xl ease-intext-2xl bg-linear-to-bl from-orange-500 to-yellow-300 bg-clip-text text-transparent">
         I'm a Fullstack Developer
-      </p>
+      </p>}
     </section>
   );
 }
