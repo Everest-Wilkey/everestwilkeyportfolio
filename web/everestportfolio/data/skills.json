@@ -11,6 +11,6 @@
     { "name": "PostgreSQL", "category": "Database" },
     { "name": "MongoDB", "category": "Database" },
     { "name": "Entity Framework", "category": "Backend" },
-    { "name": "GithubActions", "category": "DevOps" }
+    { "name": "GitHub Actions", "category": "DevOps" }
   ]
 }
