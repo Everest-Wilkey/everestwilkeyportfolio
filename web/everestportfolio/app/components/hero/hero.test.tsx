@@ -16,11 +16,11 @@ describe('check for title text', () =>
 )
 describe('check for title text', () =>
     {
-        it.concurrent('should render titel', () => {
+        it.concurrent('should render subheading', () => {
             vi.useFakeTimers();
             render(<Hero></Hero>)
             act(() => {vi.advanceTimersByTime(20000)})
-            expect(screen.getByText("I'm a Fullstack Developer")).toBeInTheDocument();  
+            expect(screen.getByText("A Fullstack Developer")).toBeInTheDocument();  
             vi.useRealTimers();
        });
     }
