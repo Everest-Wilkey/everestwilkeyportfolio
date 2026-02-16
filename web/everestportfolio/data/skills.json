@@ -1,14 +1,16 @@
-{"skills":[
-{"name": "HTML","category": "Frontend"},
-{"name": "CSS","category": "Frontend"},
-{"name": "JavaScript","category": "Frontend"},
-{"name": "C#","category": "Backend"},
-{"name": "Next.js","category": "Framework"},
-{"name": "React","category": "Framework"},
-{"name": "Express","category": "Backend"},
-{"name": "ASP.NET Core","category": "Backend"},
-{"name": "PostgreSQL","category": "Database"},
-{"name": "MongoDB","category": "Database"},
-{"name": "Entity Framework","category": "Backend"},
-{"name": "GithubActions","category": "DevOps"}
-]}
+{
+  "skills": [
+    { "name": "HTML", "category": "Frontend" },
+    { "name": "CSS", "category": "Frontend" },
+    { "name": "JavaScript", "category": "Frontend" },
+    { "name": "C#", "category": "Backend" },
+    { "name": "Next.js", "category": "Framework" },
+    { "name": "React", "category": "Framework" },
+    { "name": "Express", "category": "Backend" },
+    { "name": "ASP.NET Core", "category": "Backend" },
+    { "name": "PostgreSQL", "category": "Database" },
+    { "name": "MongoDB", "category": "Database" },
+    { "name": "Entity Framework", "category": "Backend" },
+    { "name": "GithubActions", "category": "DevOps" }
+  ]
+}
