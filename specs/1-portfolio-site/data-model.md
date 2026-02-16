@@ -42,7 +42,7 @@ Represents a technology or skill displayed in the About section.
 | Field           | Type     | Required | Notes                           |
 |-----------------|----------|----------|---------------------------------|
 | name            | string   | Yes      | Skill display name              |
-| category        | enum     | Yes      | Frontend, Backend, DevOps, Other|
+| category        | enum     | Yes      | Frontend, Backend, Framework, Database, DevOps|
 
 **Identity**: `name` (unique within category)
 **Validation**:
