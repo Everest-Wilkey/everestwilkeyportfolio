@@ -74,6 +74,7 @@ npm run lint     # ESLint
 npm test         # Vitest (watch mode)
 npx vitest run   # Vitest single run
 npx vitest run path/to/file.test.tsx  # Run single test file
+npx vitest run --coverage            # Run with coverage report
 ```
 
 ## Architecture
@@ -83,6 +84,8 @@ npx vitest run path/to/file.test.tsx  # Run single test file
 - **Layout**: `app/layout.tsx` — root layout with Navbar, imports `globals.css`
 - **Styling**: Tailwind v4 uses `@import "tailwindcss"` in `globals.css` (no `tailwind.config.js`), configured via `postcss.config.mjs` with `@tailwindcss/postcss`
 - **Server vs Client**: Pages are server components by default. Only add `'use client'` for components needing hooks/interactivity
+- **Path alias**: `@/*` maps to `web/everestportfolio/*` (configured in `tsconfig.json`)
+- **Specs**: Feature specs, plans, and tasks live in `specs/<feature-number>-<name>/`. Project constitution at `.specify.specify/memory/constitution.md`
 
 ## Important Conventions
 
@@ -96,3 +99,5 @@ npx vitest run path/to/file.test.tsx  # Run single test file
 - macOS is case-insensitive but TypeScript is case-sensitive — import paths must exactly match filenames
 - VS Code opened at the repo root may show `Can't resolve 'tailwindcss'` errors from the CSS language server — this is a VS Code issue, not a build issue. Opening VS Code from `web/everestportfolio/` resolves it.
 - `useEffect` without `[]` dependency array runs on every render — always specify dependencies
+- Tailwind v4 with `@import "tailwindcss"` injects its own dark mode styles via `prefers-color-scheme` — custom dark mode overrides in `globals.css` may conflict with Tailwind's base layer
+- Tailwind v4 gradient syntax uses `bg-linear-to-*` (not `bg-gradient-to-*` from v3)
