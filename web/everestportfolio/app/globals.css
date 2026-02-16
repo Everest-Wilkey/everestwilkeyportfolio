@@ -12,15 +12,49 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+
+.grid-background {
+  background: repeating-linear-gradient(
+    0deg,
+  rgba(0,0,0,0.1) 0px,
+  rgba(0,0,0,0.1) 1px,
+    transparent 1px, 
+    transparent 40px
+
+  ),
+  repeating-linear-gradient(
+    90deg,
+  rgba(0,0,0,0.1) 0px,
+  rgba(0,0,0,0.1) 1px,
+    transparent 1px, 
+    transparent 40px
+
+  ),
+  linear-gradient(45deg, #3b82f6, white, black);
+}
+body {
+ 
+  font-family: Arial, Helvetica, sans-serif;
+}
+.slide-in{
+  animation: slide-in 1s ease-in forwards;
+}
+@keyframes slide-in {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
   }
 }
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.blink{
+  animation: blink .8s step-start infinite;
+}
+@keyframes blink {
+  0%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 0;
+  }
 }
