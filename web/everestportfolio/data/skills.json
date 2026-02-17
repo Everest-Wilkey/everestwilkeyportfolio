@@ -1,16 +1,16 @@
 {
   "skills": [
-    { "name": "HTML", "category": "Frontend", "iconUrl": "" },
-    { "name": "CSS", "category": "Frontend" },
-    { "name": "JavaScript", "category": "Frontend" },
-    { "name": "C#", "category": "Backend" },
-    { "name": "Next.js", "category": "Framework" },
-    { "name": "React", "category": "Framework" },
-    { "name": "Express", "category": "Backend" },
-    { "name": "ASP.NET Core", "category": "Backend" },
-    { "name": "PostgreSQL", "category": "Database" },
-    { "name": "MongoDB", "category": "Database" },
-    { "name": "Entity Framework", "category": "Backend" },
-    { "name": "GithubActions", "category": "DevOps" }
+    { "name": "HTML", "category": "Frontend", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
+    { "name": "CSS", "category": "Frontend", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
+    { "name": "JavaScript", "category": "Frontend", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
+    { "name": "C#", "category": "Backend", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" },
+    { "name": "Next.js", "category": "Framework", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" },
+    { "name": "React", "category": "Framework", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+    { "name": "Express", "category": "Backend", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" },
+    { "name": "ASP.NET Core", "category": "Backend", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg" },
+    { "name": "PostgreSQL", "category": "Database", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" },
+    { "name": "MongoDB", "category": "Database", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
+    { "name": "Entity Framework", "category": "Backend", "icon": "" },
+    { "name": "GithubActions", "category": "DevOps", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/githubactions/githubactions-original.svg" }
   ]
 }
