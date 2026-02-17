@@ -1,6 +1,6 @@
 {
   "skills": [
-    { "name": "HTML", "category": "Frontend" },
+    { "name": "HTML", "category": "Frontend", "iconUrl": "" },
     { "name": "CSS", "category": "Frontend" },
     { "name": "JavaScript", "category": "Frontend" },
     { "name": "C#", "category": "Backend" },
