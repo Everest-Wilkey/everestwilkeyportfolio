@@ -8,7 +8,7 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 w-full bg-transparent h-screen md:pl-30 md:pr-30">
+    <nav className="fixed top-0 w-full bg-transparent md:pl-30 md:pr-30 z-50">
       <div className="flex justify-between p-10">
         <Link href={"/"} className=" text-2xl"><span className="text-blue-500">&lt;</span>EW<span className="text-blue-500">/&gt;</span></Link>
         <button onClick={() => setMenuOpen(!menuOpen)} className="md:hidden">

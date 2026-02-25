@@ -3,9 +3,10 @@ export enum Category {
     Backend = "Backend",
     Database =  "Database",
     DevOps = "DevOps",
-    Framework = "Framework",
 }
 export interface Skill {
     name: string,
     category: Category
+    icon: string
+    alt: string
 }
