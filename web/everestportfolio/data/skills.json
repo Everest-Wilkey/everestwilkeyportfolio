@@ -1,16 +1,15 @@
 {
   "skills": [
-    { "name": "HTML", "category": "Frontend", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
-    { "name": "CSS", "category": "Frontend", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
-    { "name": "JavaScript", "category": "Frontend", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
-    { "name": "C#", "category": "Backend", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" },
-    { "name": "Next.js", "category": "Framework", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" },
-    { "name": "React", "category": "Framework", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
-    { "name": "Express", "category": "Backend", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" },
-    { "name": "ASP.NET Core", "category": "Backend", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg" },
-    { "name": "PostgreSQL", "category": "Database", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" },
-    { "name": "MongoDB", "category": "Database", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
-    { "name": "Entity Framework", "category": "Backend", "icon": "" },
-    { "name": "GithubActions", "category": "DevOps", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/githubactions/githubactions-original.svg" }
+    { "name": "HTML", "category": "Frontend", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg", "alt": "HTML logo" },
+    { "name": "CSS", "category": "Frontend", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg", "alt": "CSS logo" },
+    { "name": "JavaScript", "category": "Frontend", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg", "alt": "JavaScript logo" },
+    { "name": "C#", "category": "Backend", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg", "alt": "C# logo" },
+    { "name": "Next.js", "category": "Frontend", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg", "alt": "Next.js logo" },
+    { "name": "React", "category": "Frontend", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg", "alt": "React logo" },
+    { "name": "Express", "category": "Backend", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg", "alt": "Express logo" },
+    { "name": "ASP.NET", "category": "Backend", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg", "alt": "ASP.NET Core logo" },
+    { "name": "PostgreSQL", "category": "Database", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg", "alt": "PostgreSQL logo" },
+    { "name": "MongoDB", "category": "Database", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg", "alt": "MongoDB logo" },
+    { "name": "GithubActions", "category": "DevOps", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/githubactions/githubactions-original.svg", "alt": "GitHub Actions logo" }
   ]
 }

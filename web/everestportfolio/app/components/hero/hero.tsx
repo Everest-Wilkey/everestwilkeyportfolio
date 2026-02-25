@@ -23,20 +23,22 @@ export default function Hero() {
         setdoneTyping(true);
         clearInterval(timer);
       }
-    }, 150);
+    }, 125);
   }, []);
   return (
     <section className="min-h-screen flex flex-col items-center justify-center ">
-      <div className="w-full max-w-5xl mx-auto px-8 text-center md:text-left
-">
+      <div className="w-full max-w-5xl mx-auto px-8 text-center">
         <h1 className="md:text-6xl text-3xl text-black ">
-          {title}<span className="text-blue-500">{name}<span className="blink bg-linear-45 from-fuchsia-700 to-purple-600 bg-clip-text text-transparent ">|</span></span>
+          {title}
+          <span className="text-blue-500">
+            {name}
+            <span className="blink text-blue-500  ">|</span>
+          </span>
         </h1>
-
         <p
-          className={` md:text-6xl text-2xl bg-linear-45 from-fuchsia-700 to-purple-600 bg-clip-text text-transparent ${donetyping ? "opacity-100 slide-in" : "opacity-0"}`}
+          className={` md:text-6xl text-2xl text-gray-600 ${donetyping ? "opacity-100 slide-in" : "opacity-0"}`}
         >
-         A Fullstack Developer
+          A Fullstack Developer
         </p>
       </div>
     </section>
