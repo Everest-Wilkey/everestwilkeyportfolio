@@ -2,16 +2,26 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <nav className="fixed top-0 w-full bg-transparent md:pl-30 md:pr-30 z-50">
+    <nav className={`fixed top-0 w-full md:pl-30 md:pr-30 z-50 transition-all duration-300 ${scrolled ? "bg-white/20 backdrop-blur-sm" : "bg-transparent"}`}>
       <div className="flex justify-between p-10">
         <Link href={"/"} className=" text-2xl"><span className="text-blue-500">&lt;</span>EW<span className="text-blue-500">/&gt;</span></Link>
-        <button onClick={() => setMenuOpen(!menuOpen)} className="md:hidden">
+        {/* <button onClick={() => setMenuOpen(!menuOpen)} className="md:hidden">
           <Image className="invert"
             src="/menu.svg"
             alt="Menu button"
@@ -27,19 +37,19 @@ export default function Navbar() {
                 <Link href={"/contact"}>Contact</Link>
             </li>
         </ul>
-        <button className="text-lg bg-blue-500 rounded-3xl p-2 hidden md:block ">Lets Chat</button>
+        <button className="text-lg bg-blue-500 rounded-3xl p-2 hidden md:block ">Lets Chat</button> */}
       </div>
-        <ul className={`transition-transform duration-300 ease-in-out shadow-lg flex flex-col md:hidden justify-evenly p-4 gap-4 rounded-tl-lg rounded-bl-lg text-2xl bg-black/50 text-white items-end ml-auto w-2/4 h-1/3  ${menuOpen ? "translate-x-0" : "translate-x-full" }`} >
-          <li className="self-center">
-            <Link href={"/projects"} className="color">Projects</Link>
-          </li>
-          <li className="self-center">
-            <Link href={"/contact"}>Contact</Link>
-          </li>
-          <li className="self-center">
-            <button className="text-lg bg-blue-500 rounded-3xl p-2">Lets Chat</button>
-          </li>
-        </ul>
+          {/* <ul className={`transition-transform duration-300 ease-in-out shadow-lg flex flex-col md:hidden justify-evenly p-4 gap-4 rounded-tl-lg rounded-bl-lg text-2xl bg-black/50 text-white items-end ml-auto w-2/4 h-1/3  ${menuOpen ? "translate-x-0" : "translate-x-full" }`} >
+            <li className="self-center">
+              <Link href={"/projects"} className="color">Projects</Link>
+            </li>
+            <li className="self-center">
+              <Link href={"/contact"}>Contact</Link>
+            </li>
+            <li className="self-center">
+              <button className="text-lg bg-blue-500 rounded-3xl p-2">Lets Chat</button>
+            </li>
+          </ul> */}
     </nav>
   );
 }
