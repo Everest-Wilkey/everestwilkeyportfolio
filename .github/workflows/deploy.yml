@@ -3,6 +3,8 @@ name: Build and Deploy
 on:
   push:
     branches: [main]
+  pull_request:
+    branches: [main]
 
 jobs:
   build-and-deploy:
@@ -28,5 +30,6 @@ jobs:
         run: npm run build
 
       - name: Restart app
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         working-directory: web/everestportfolio
         run: pm2 restart portfolio || pm2 start npm --name "portfolio" -- start
