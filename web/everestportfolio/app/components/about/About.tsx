@@ -1,10 +1,10 @@
 import Image from "next/image";
 import skillsData from "@/data/skills.json";
-import { Category, Skill } from "@/lib/types";
+import { Skill } from "@/lib/types";
 import CardIcon from "./cardicon";
 
 export function About() {
-  let skills = skillsData.skills;
+  const skills = skillsData.skills as Skill[];
 
   return (
     <section className="mx-auto py-8 w-full xl:max-w-[1400px] md:py-12">
@@ -16,10 +16,9 @@ export function About() {
           <div className="relative aspect-[5/3] w-full max-w-[300px] md:max-w-[500px]">
             <Image
               className="rounded-xl object-cover"
-              src="https://placehold.co/500x300"
+              src="/everest-wilkey.jpg"
               alt="Everest Wilkey, FullStack Developer"
               fill
-              unoptimized
             />
           </div>
         </div>
