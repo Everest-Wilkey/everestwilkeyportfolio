@@ -1,0 +1,20 @@
+#:schema node_modules/wrangler/config-schema.json
+# Cloudflare Workers config for deploying this Next.js app via @opennextjs/cloudflare.
+# Docs: https://opennext.js.org/cloudflare
+
+name = "everestportfolio"
+main = ".open-next/worker.js"
+compatibility_date = "2025-03-01"
+# nodejs_compat enables Node.js built-ins that Next.js relies on at runtime.
+compatibility_flags = ["nodejs_compat", "global_fetch_strictly_public"]
+
+# Static assets (public/ + Next.js static output) are served by the Workers
+# assets runtime, not the worker script. The binding lets the worker fall
+# through to an asset when the incoming path matches one.
+[assets]
+directory = ".open-next/assets"
+binding = "ASSETS"
+
+# Turns on request logs + tail events in the Cloudflare dashboard.
+[observability]
+enabled = true
