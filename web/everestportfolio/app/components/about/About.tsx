@@ -1,6 +1,6 @@
-import Image from "next/image";
 import skillsData from "@/data/skills.json";
 import { Skill } from "@/lib/types";
+import Image from "next/image";
 import CardIcon from "./cardicon";
 
 export function About() {
@@ -16,7 +16,7 @@ export function About() {
           <div className="relative aspect-[5/3] w-full max-w-[300px] md:max-w-[500px]">
             <Image
               className="rounded-xl object-cover"
-              src="https://placehold.co/500x300"
+              src="/everest-wilkey.webp"
               alt="Everest Wilkey, FullStack Developer"
               fill
               unoptimized
