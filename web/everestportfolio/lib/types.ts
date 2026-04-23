@@ -1,9 +1,5 @@
-export enum Category {
-    Frontend = "Frontend",
-    Backend = "Backend",
-    Database =  "Database",
-    DevOps = "DevOps",
-}
+export type Category = "Frontend" | "Backend" | "Database" | "DevOps";
+
 export interface Skill {
     name: string,
     category: Category
